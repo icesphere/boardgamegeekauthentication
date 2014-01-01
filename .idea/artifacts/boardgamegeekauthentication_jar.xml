@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="boardgamegeekauthentication:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/boardgamegeekauthentication_jar</output-path>
+    <root id="archive" name="boardgamegeekauthentication.jar">
+      <element id="module-output" name="boardgamegeekauthentication" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/jersey/jersey-client/1.13/jersey-client-1.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/jersey/jersey-core/1.13/jersey-core-1.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
