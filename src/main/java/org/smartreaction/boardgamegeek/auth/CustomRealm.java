@@ -1,14 +1,13 @@
 package org.smartreaction.boardgamegeek.auth;
 
 import com.sun.appserv.security.AppservRealm;
-import com.sun.enterprise.security.auth.realm.BadRealmException;
 import com.sun.enterprise.security.auth.realm.InvalidOperationException;
-import com.sun.enterprise.security.auth.realm.NoSuchRealmException;
 import com.sun.enterprise.security.auth.realm.NoSuchUserException;
 
-import java.util.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.List;
 
 public class CustomRealm extends AppservRealm
 {

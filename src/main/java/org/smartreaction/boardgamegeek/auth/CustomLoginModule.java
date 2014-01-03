@@ -40,13 +40,14 @@ public class CustomLoginModule extends AppservPasswordLoginModule
             int status = response.getStatus();
             if (status == 200) {
                 for (NewCookie newCookie : response.getCookies()) {
-                    if(newCookie.getName().equalsIgnoreCase("bggpassword")) {
+                    if (newCookie.getName().equalsIgnoreCase("bggpassword")) {
                         loginSuccessful = true;
 
                         try {
                             HttpServletRequest request = (HttpServletRequest) PolicyContext.getContext(HttpServletRequest.class.getName());
                             request.getSession().setAttribute("bggPasswordCookie", newCookie.getValue());
-                        } catch (PolicyContextException e) {
+                        }
+                        catch (PolicyContextException e) {
                             throw new LoginException("Error getting http request");
                         }
                     }
